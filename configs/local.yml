@@ -1,7 +1,7 @@
 server:
   port: 5000
 mysql:
-  host: localhost
+  host: 192.168.175.50
   port: 3306
   user: root
   password: root
@@ -9,3 +9,10 @@ mysql:
   maxIdleConnections: 10
   maxOpenConnections: 100
   connectionMaxLiftTime: 3600
+logger:
+  log_level: debug
+  file_log_name: "./storages/logs/dev.000001.log"
+  max_size: 300
+  max_backups: 3
+  max_age: 28
+  compress: true

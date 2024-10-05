@@ -11,7 +11,7 @@ func LoadConfig() {
 	viper := viper.New()
 	viper.AddConfigPath("./configs/")
 	viper.SetConfigName("local")
-	viper.SetConfigType("yaml")
+	viper.SetConfigType("yml")
 
 	err := viper.ReadInConfig()
 	if err != nil {
